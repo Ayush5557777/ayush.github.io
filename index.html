@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- last updated: february 17 , 2025-->
+         <title> About Me</title>
+         <link rel="stylesheet" href="AyushAdhikari_style.css">
+    </head>
+    <body>
+
+        <img src="logo.png" alt = "ECU Logo">
+        <nav>
+            <h1> Page Navigation</h1>
+            <ul>
+                <li><a href="#abut_me">About Me</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#hobbies_Interests">Hobbies and Interests</a></li>
+                <li><a href="#Interactive_tools"> Interactive Tools</a></li>
+            </ul>
+        </nav>
+
+        <section id="about-me">
+            <h1> About Me</h1>
+            <img src="aayush.jpg" alt = " profile picture">
+            <p class="bold-texts">My name is Ayush Adhikari</p>
+            <p class="italic-texts">My major is Computer Science</p>
+            <p class = "underlined-texts">I am a junior</p>
+        </section>
+
+        <section id = "classes">
+            <h1>Classes</h1>
+            <div class="container">
+            
+            <div class="grids_1">
+                
+                <h2>CMPSC 3323 -Internet Programming</h2>
+                <p>This subject make us learn about the website such as Html, css and javaScripts</p>
+            </div>
+            <div class="grids_2">
+                <h2>CMPSC 3543 -Object Oriented Programming</h2>
+                <p>This subject teaches about the python programming language with is  object oriented programming </p>
+            </div>
+
+            <div class="grids_3">
+                <h2>CMPSC 4983 - Cloud Programming</h2>
+                <p>In this course , we get to learn abiout cloud storage such as Aws</p>
+            </div>
+            <div class="grids_4">
+                <h2>CPSMA 3103- Algorithm Analysis</h2>
+                <p>In this course we get to know about the algorithms that are used in every section on programming</p>
+            </div>
+
+         </div>
+            
+
+        </section>
+
+        <section id="hobbies_Interests">
+
+            <h1>Hobbies and Interests</h1>
+            <ul class="unordereds-lists">
+                <li>Listening Music</li>
+                <li>Writting Poems</li>
+                <li>Collecting Coins</li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wxXE8Q_hvOA?si=z-5e--tRS86Kp4RC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </section>
+        
+
+         <section id = "Interactive_tools" class="interactive-tools">
+            <h1>Interactive tools</h1>
+            <div class="grid-container">
+            
+            <div class="grid-item">
+                <h2>Arithmetic Calculator</h2>
+                <form id="arithmetic-form">
+                    <input type="number" id="num1" placeholder="enter first number" required>
+                    <input type="number" id="num2" placeholder="enter second number" required>
+                    section     <div class="radio-group">
+                        <label><input type="radio" name="operator" value="+" required>Add</label>
+                        <label><input type="radio" name="operator" value="-" required>Subtract</label>
+                        <label><input type="radio" name="operator" value="*" required>Multiply</label>
+                        <label><input type="radio" name="operator" value="/" required>Divide</label>
+                    </div>
+                    <button type="submit"> Calculate</button>
+
+                 </form>
+                 <div id="arithmetic-output"></div>
+            </div>
+
+            <!-- factorial Calculator-->
+             <div class="grid-item">
+                <h2>Factorial Calculator</h2>
+                <form id="factorial-form">
+                    <input type="number" id="factorial-input" placeholder="Enter an integer value" required min="0">
+                    <button type="submit">Calculate Factorial</button>
+                </form>
+                <div id="factorial-output"></div>
+             </div>
+
+             <!-- Fibonacci sequence calculator-->
+              <div class="grid-item">
+                <h2>Fibonacci Calculator</h2>
+                <form id="fibonacci-form">
+                    <input type="number" id="fibonacci-input" placeholder="Enter the nth number" required min="0" max="40">
+                    <button type="submit">Calculate Fibonacci</button>
+                </form>
+                <div id="fibonacci-output"></div>
+              </div>
+
+              <!-- miniumum and maximum value-->
+               <div class="grid-item">
+                <h2>Find minimum , maximum and range</h2>
+                <form id="min-max-form">
+                    <input type="number" id="numA" placeholder="Enter first number" required>
+                    <input type="number" id="numB" placeholder="Enter second number" required>
+                    <input type="number" id="numC" placeholder="Enter third number" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="min-max-output"></div>
+               </div>
+
+               <!--mailing list form-->
+               <div class="grid-item span-row">
+                <h2>Mailing list</h2>
+                <form id="mailing-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" placeholder="Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="John@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" placeholder="12345" required>
+                    </div>
+                    <div class="button-group">
+                       <button type="submit">Send</button>\
+                       <button type="reset">Reset</button>
+                    </div>
+                </form>
+                <div id="mailing-list"></div>
+               </div>
+            </div>
+
+         </section>
+                       
+                
+        
+         <p> <a href="https://www.ecok.edu/" target="_blank">ECU HomePage</a></p>
+
+
+
+         <script src="AyushAdhikari_forms.js"></script>
+
+    </body>
+</html>
+         
